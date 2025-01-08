@@ -7,11 +7,11 @@ source /opt/ros/noetic/setup.bash
 source devel/setup.bash
 
 # Set ROS Master URI
-export ROS_MASTER_URI=http://192.168.0.122:11311
+export ROS_MASTER_URI=http://192.168.0.121:11311
 
 # Set ROS IP
 export ROS_IP=192.168.8.77
-export ROBOT_NAME=dingo2
+export ROBOT_NAME=dingo1
 
 
 # Notify user of setup completion

@@ -25,7 +25,7 @@ elif [ "$1" == "switching" ]; then
 
     # call the action client
     gnome-terminal --tab --title="Action Client" -- bash -c "\
-    $ros_sourcing_script; rosrun switched_control switched_client.py dinova; exec bash"
+    $ros_sourcing_script; rosrun switched_control switched_joint_client.py dinova; exec bash"
 else
     echo "$1 is not a known simulation type"
 fi
