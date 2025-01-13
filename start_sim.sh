@@ -21,7 +21,7 @@ elif [ "$1" == "switching" ]; then
     # launch the action server
     gnome-terminal --tab --title="Action Server" -- bash -c "\
     $ros_sourcing_script; sleep 3; \
-    roslaunch switched_control switched_fabrics.launch lidar:=false with_obstacles:=true; exec bash"
+    roslaunch switched_control switched_fabrics.launch sim:=true; exec bash"
 
     # call the action client
     gnome-terminal --tab --title="Action Client" -- bash -c "\
