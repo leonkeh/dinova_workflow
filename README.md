@@ -14,3 +14,8 @@ The workflow with the robot is the following:
 specific on https://github.com/INTERACT-tud-amr/dinova_motion/tree/main/dinova_fabrics_wrapper
 
 possibly change goal in https://github.com/INTERACT-tud-amr/dinova_motion/blob/main/dinova_fabrics_wrapper/scripts/dinova_pose_client.py
+
+## for simulation, bc I freaking forgot
+1. ``roslaunch dinova_gazebo dinova.launch mode:=velocity``
+2. ``roslaunch switched_control switched_fabrics.launch sim:=true``
+3. ``rosrun switched_control switched_joint_client.py dinova "experiment2"``
